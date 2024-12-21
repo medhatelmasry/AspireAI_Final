@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>SKEXP0001, SKEXP0003, SKEXP0010, SKEXP0011, SKEXP0050, SKEXP0052</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Azure.AI.OpenAI" Version="9.0.0-preview.5.24551.3" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.30.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../AiLibrary/AiLibrary.csproj" />
+    <ProjectReference Include="../AspireAI.ServiceDefaults/AspireAI.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+
+</Project>
